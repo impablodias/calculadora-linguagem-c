@@ -14,19 +14,20 @@ int main() {
 
     printf("Digite o primeiro número: ");
     scanf("%lf", &num1);
+
     printf("Digite o segundo número: ");
     scanf("%lf", &num2);
 
     switch (operacao) {
-        case '+': resultado = somar(num1, num2); 
+        case '+': resultado = somar(num1, num2);
         break;
-        case '-': resultado = subtrair(num1, num2); 
+        case '-': resultado = subtrair(num1, num2);
         break;
-        case '*': resultado = multiplicar(num1, num2); 
+        case '*': resultado = multiplicar(num1, num2);
         break;
-        case '/': if(num2 !=0) { 
+        case '/': if(num2 !=0) {
             resultado = dividir(num1, num2);}
-        else {printf("Erro: Divisao por zero!\n"); return 1;} 
+        else {printf("Erro: Divisao por zero!\n"); return 1;}
         break;
         default: printf("Operador invalido!\n"); return 1;
     }
