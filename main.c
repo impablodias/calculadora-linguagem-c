@@ -17,7 +17,7 @@ int main() {
 
     printf("Digite o segundo número: ");
     scanf("%lf", &num2);
-
+    
     switch (operacao) {
         case '+': resultado = somar(num1, num2);
         break;
